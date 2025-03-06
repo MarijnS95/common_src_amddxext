@@ -81,7 +81,7 @@ public:
     virtual UINT32 BeginSample(ID3D12GraphicsCommandList* pGfxCmdList, const AmdExtGpaSampleConfig& config) = 0;
     virtual VOID EndSample(ID3D12GraphicsCommandList* pGfxCmdList, UINT32 sampleId) = 0;
     virtual bool IsReady() const = 0;
-    virtual HRESULT GetResults(UINT32 sampleId, size_t* pSizeInBytes, void *pData) const = 0;
+    virtual HRESULT GetResults(UINT32 sampleId, _Inout_ size_t* pSizeInBytes, _Out_writes_bytes_opt_(*pSizeInBytes) void *pData) const = 0;
     virtual HRESULT Reset() = 0;
     virtual VOID CopyResults(ID3D12GraphicsCommandList* pGfxCmdList) = 0;
 };
