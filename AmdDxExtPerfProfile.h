@@ -9,7 +9,7 @@
 ***************************************************************************************************
 * @file  amddxextperfprofile.h
 * @brief
-*    AMD D3D Exension API include file. This is a helper include file for extensions. It
+*    AMD D3D Extension API include file. This is a helper include file for extensions. It
 *    provides a common base class for all extension interfaces
 ***************************************************************************************************
 */

@@ -8,7 +8,7 @@
 /**
 ***************************************************************************************************
 * @file  amddxextapi.h
-* @brief AMD D3D Exension API include file. This is the main include file for apps using extensions.
+* @brief AMD D3D Extension API include file. This is the main include file for apps using extensions.
 ***************************************************************************************************
 */
 #ifndef _AMDDXEXTAPI_H_
@@ -26,7 +26,7 @@ interface ID3D11Device;
 interface ID3D10Resource;
 interface ID3D11Resource;
 
-// App must use GetProcAddress, etc. to retrive this exported function
+// App must use GetProcAddress, etc. to retrieve this exported function
 // The associated typedef provides a convenient way to define the function pointer
 HRESULT __cdecl AmdDxExtCreate(ID3D10Device* pDevice, IAmdDxExt** ppExt);
 typedef HRESULT (__cdecl *PFNAmdDxExtCreate)(ID3D10Device* pDevice, IAmdDxExt** ppExt);
